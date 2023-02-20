@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f1f5f8;
+    color: #000000;
+    font-weight: 300;
+
+}
+
+.title{
+    text-align: center;
+    background-color: #007185;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+
+.bookList{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.book{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.book h1 {
+    margin-top: 0.5rem;
+    margin-left: 27px;
+}
+
+.book h4 {
+    color: #617d98;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    margin-left: 27px;
+}
+
+@media screen and (min-width: 768px){
+    .bookList{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
